@@ -159,17 +159,36 @@
 
 //}
 ////////////задание 9
-Console.Write("Введите длину в метрах: ");
-double m = double.Parse(Console.ReadLine());
+Console.WriteLine("Выберите единицу измерения: \n1. Длинна\n2. Вес");
+double s = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Че те надо?\n1. мм\n2. см\n3. дм\n4. км");
-int s = int.Parse(Console.ReadLine());
-
-switch (s)
+if (s == 1)
 {
-    case 1: Console.WriteLine($"{m * 1000d} мм"); break;
-    case 2: Console.WriteLine($"{m * 100d} см"); break;
-    case 3: Console.WriteLine($"{m * 10d} дм"); break;
-    case 4: Console.WriteLine($"{m * 0.001d} км"); break;
+    Console.Write("Введите длину в метрах: ");
+    double m = double.Parse(Console.ReadLine());
+    Console.WriteLine("Выбор: \n1. мм\n2. см\n3. дм\n4. км");
+    int l = int.Parse(Console.ReadLine());
+
+    switch (l)
+    {
+        case 1: Console.WriteLine($"{m * 1000} мм"); break;
+        case 2: Console.WriteLine($"{m * 100} см"); break;
+        case 3: Console.WriteLine($"{m * 10} дм"); break;
+        case 4: Console.WriteLine($"{m * 0.001} км"); break;
+    }
 }
-Console.WriteLine(
+else
+{
+    Console.Write("Введите вес в киллограммах: ");
+    double e = double.Parse(Console.ReadLine());
+    Console.WriteLine("Выбор: \n1. мг\n2. гр\n3. тонны\n4. пуды");
+    int p = int.Parse(Console.ReadLine());
+
+    switch (p)
+    {
+        case 1: Console.WriteLine($"{e * 1000000} мг"); break;
+        case 2: Console.WriteLine($"{e * 1000} гр"); break;
+        case 3: Console.WriteLine($"{e * 0,001} тонны"); break;
+        case 4: Console.WriteLine($"{e * 0.06105} пуды"); break;
+    }
+}
