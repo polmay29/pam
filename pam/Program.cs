@@ -383,7 +383,7 @@ else
 //    Console.WriteLine($"{matrix[0, 0]} {matrix[0, 1]}"); Console.WriteLine($"{matrix[1, 0]} {matrix[1, 1]}");
 //}
 
-Полина, [09.09.2024 20:03]
+
 //17 задание
 
 
@@ -542,7 +542,7 @@ else
 //    {
 //        const string upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-+=<>?/[]{}|";
 
-Полина, [09.09.2024 20:03]
+
 //        string allChars = upperCase;
 //        StringBuilder password = new StringBuilder(length);
 //        Random random = new Random();
